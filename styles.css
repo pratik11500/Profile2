@@ -84,6 +84,116 @@ a.nav-link {
   transation: 0.5s;
 }
 
+
+.text-animation span {  
+  position: relative;  
+}  
+
+.text-animation span:before {  
+  content: "Student";  
+  color: var(--main-color);  
+  animation: words 20s infinite;  
+}  
+
+.text-animation span:after {  
+  content: "";  
+  background-color: var(--bg-color);  
+  position: absolute;  
+  width: calc(100% + 8px);  
+  height: 100%;  
+  border-left: 3px solid var(--bg-color);  
+  right: -8px;  
+  animation: cursor 0.65s infinite, typing 20s steps(14) infinite;  
+}
+
+@keyframes cursor {  
+  to {  
+      border-left: 2px solid var(--main-color);  
+  }  
+}  
+
+@keyframes words {  
+  0% {  
+      content: "Student";  
+  }  
+  20% {  
+      content: "Student";  
+  }  
+  40% {  
+      content: "Programmer";  
+  }  
+  41% {  
+      content: "Programmer";  
+  }  
+  60% {  
+      content: "Student";  
+  }  
+  61% {  
+      content: "Student";  
+  }  
+  80% {  
+      content: "Programmer";  
+  }  
+  81% {  
+      content: "Programmer";  
+  }  
+  100% {  
+      content: "Student";  
+  }  
+}
+
+@keyframes typing {  
+    10% {  
+        width: 0;  
+    }  
+    15% {  
+        width: calc(100% + 8px);  
+    }  
+    30% {  
+        width: calc(100% + 8px);  
+    }  
+    50% {  
+        width: calc(100% + 8px);  
+    }  
+    70% {  
+        width: calc(100% + 8px);  
+    }  
+    75% {  
+        width: calc(100% + 8px);  
+    }  
+    90% {  
+        width: calc(100% + 8px);  
+    }  
+    95% {  
+        width: 0;  
+    }  
+    5% {  
+        width: calc(100% + 8px);  
+    }  
+    20% {  
+        width: calc(100% + 8px);  
+    }  
+    25% {  
+        width: calc(100% + 8px);  
+    }  
+    45% {  
+        width: calc(100% + 8px);  
+    }  
+    60% {  
+        width: calc(100% + 8px);  
+    }  
+    65% {  
+        width: calc(100% + 8px);  
+    }  
+    80% {  
+        width: calc(100% + 8px);  
+    }  
+    85% {  
+        width: calc(100% + 8px);  
+    }  
+}
+
+
 #home {
   margin: auto;
   height: 100vh;
