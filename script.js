@@ -37,29 +37,4 @@ const updateVisitorCount = async () => {
     e.preventDefault();
   };
 
-
-
-  var showWarning = function() {
-    var warningPopup = document.createElement('div');
-    warningPopup.innerHTML = '<p>Content is Protected!</p>';
-    warningPopup.classList.add('warning-popup');
-    document.body.appendChild(warningPopup);
-
-    // Remove the warning after a delay (e.g., 2 seconds)
-    setTimeout(function() {
-      document.body.removeChild(warningPopup);
-    }, 2000);
-  };
-
-  document.addEventListener('contextmenu', blockContextMenu);
-  document.addEventListener('keydown', function(e) {
-    // Disable F12 key
-    if (e.key === 'F12' || e.keyCode === 123) {
-      e.preventDefault();
-      showWarning();
-    }
-  });
-}
-  ;
-updateVisitorCount();
-
+  
