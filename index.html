@@ -59,113 +59,6 @@
     gsap.fromTo(".logo-name", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 2, delay: 0.5 });
   </script>
 
-  <!----
-
-
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Page Not Found</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: black;
-            color: white;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .container {
-            text-align: center;
-        }
-        .code {
-            font-size: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .zero {
-            position: relative;
-        }
-        .face {
-            font-size: 50px;
-            position: absolute;
-            top: 10px;
-            left: 30px;
-        }
-        .message {
-            font-size: 24px;
-            margin-top: -20px;
-        }
-        
-        @keyframes twinkle {
-            0%, 20%, 50%, 80%, 100% {
-                opacity: 0.5;
-            }
-            25%, 75% {
-                opacity: 1;
-            }
-        }
-
-        .star {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background: white;
-            border-radius: 50%;
-            animation: twinkle 2s infinite ease-in-out;
-        }
-
-        .star:nth-child(2) { top: 10%; left: 20%; animation-delay: -2s; }
-        .star:nth-child(3) { top: 40%; left: 50%; animation-delay: -4s; }
-        .star:nth-child(4) { top: 60%; left: 70%; animation-delay: -6s; }
-        .star:nth-child(5) { top: 80%; left: 30%; animation-delay: -8s; }
-        .star:nth-child(6) { top: 50%; left: 20%; animation-delay: -10s; }
-        .star:nth-child(7) { top: 20%; left: 80%; animation-delay: -12s; }
-
-        .shooting-star {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background: white;
-            border-radius: 50%;
-            animation: shooting-star 3s infinite ease-in-out;
-        }
-
-        .shooting-star:nth-child(2) { animation-delay: -15s; }
-        .shooting-star:nth-child(3) { animation-delay: -30s; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="code">
-            4
-            <div class="zero">
-                0
-                <div class="face"></div>
-            </div>
-            4
-        </div>
-        <div class="message">page not found</div>
-    </div>
-    
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="shooting-star"></div>
-    <div class="shooting-star"></div>
-
----->
-
 <script type="text/javascript">
     window.doorbellOptions = {
         "id": "14336",
@@ -196,8 +89,11 @@
             </a>
           </li>
           <li>
-            <a class="nav-link" href="#projects">Projects
+            <a class="nav-link projects" href="#projects">
+                Projects
+                <span class="tooltip">Under Development</span>
             </a>
+            
           </li>
           <li>
             <a class="nav-link" href="#contact">Contact
@@ -222,14 +118,9 @@
         <section class="intro">
           <h3></h3>
           
-            <div class="text-animation"><p style="font-size: 1.2rem;font-family: var(--main-font-family);">I'm Pratik, a <span style="color: #fff; text-shadow:   
-                                                                                                                           0 0 3px #9c3ef9,   
-                                                                                                                           0 0 6px #9c3ef9,   
-                                                                                                                           0 0 10px #9c3ef9,   
-                                                                                                                           0 0 15px #9c3ef9;"></span> </div>
+            <p>I'm Pratik, a Student</p>
           
-          <p style="font-size: 1.2rem;font-family: var(--main-font-family);">
-            who codes to find joy in the language that talks to machines.
+          <p>who codes to find joy in the language that talks to machines.
           </p>
           <p> I have some experience with HTML and CSS and am currently learning Java and Python 
           </p>
@@ -260,6 +151,8 @@
           </div>
         </section>
       </div>
+
+      
       
       <div id="projects">
         
@@ -270,22 +163,24 @@
   <h3> Projects <hr></h3>
   
   
-    <div class="card">
-      <img src="https://img.playbook.com/bHkB4mdV1lvO-dLSaRgSaKMqWI1dC03gZBYnEx5LFmM/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2JhM2JkNWRk/LWZlOTUtNGY0NC05/MmMzLTFkN2IwOTM3/YzMzMA" alt="Project 4" class="work-img">
-      <div class="work-content">
-        <h2>Strategic Combat</h2>
-        <p>This webpage is dedicated to teaching and enhancing combat skills. It may include tutorials, videos, and articles covering various martial arts and self-defense techniques. Users can find valuable information on improving their fighting abilities, from basic moves to advanced strategies.</p>
-        <a href="https://pratik11500.github.io/Skills/" target="_blank"  class="redirect-btn">Explore</a>
-      </div>
-    </div>
+          <div class="card">
+              <img src="https://img.playbook.com/bHkB4mdV1lvO-dLSaRgSaKMqWI1dC03gZBYnEx5LFmM/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2JhM2JkNWRk/LWZlOTUtNGY0NC05/MmMzLTFkN2IwOTM3/YzMzMA" alt="Project 4" class="work-img">
+              <div class="work-content">
+                  <h2>Strategic Combat</h2>
+                  <p>This webpage is dedicated to teaching and enhancing combat skills. It may include tutorials, videos, and articles covering various martial arts and self-defense techniques. Users can find valuable information on improving their fighting abilities, from basic moves to advanced strategies.</p>
+                  <a href="#" target="_blank" class="redirect-btn">Explore</a>
+              </div>
+              <div class="overlay">Under Development</div>
+          </div>
     
     <div class="card">
       <img src="https://img.playbook.com/vDR_uMag-9R4-vUmgoXm_iMnHxzlQVwBWWZi3EMDB5I/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2NmNjU2NWMx/LTRiMTEtNGZlZi05/ZTY2LTAxOGUxMGQ1/NGFlYw" alt="Project 4" class="work-img">
       <div class="work-content">
         <h2>Lifestyle Hub</h2>
         <p>A comprehensive platform for life advice and tips, this webpage covers a wide range of topics to help users improve various aspects of their lives. It could include articles on personal development, productivity, relationships, health, and more. The goal is to provide practical insights and actionable tips for a well-rounded and fulfilling life.</p>
-        <a href="https://pratik11500.github.io/life/" target="_blank"  class="redirect-btn">Explore</a>
+        <a href="#" target="_blank"  class="redirect-btn">Explore</a>
       </div>
+      <div class="overlay">Under Development</div>
     </div>
     
     <div class="card">
@@ -293,8 +188,9 @@
       <div class="work-content">
         <h2>Travelify Tour</h2>
         <p>This webpage serves as a travel hub, offering a variety of information related to tourism and travel. Visitors can explore travel guides, itineraries, and tips for different destinations. The site might feature beautiful visuals, travel stories, and practical advice to help users plan and enjoy their journeys.</p>
-        <a href="https://pratik11500.github.io/tour/" target="_blank"  class="redirect-btn">Explore</a>
+        <a href="#" target="_blank"  class="redirect-btn">Explore</a>
       </div>
+      <div class="overlay">Under Development</div>
     </div>
     
     <div class="card">
@@ -302,13 +198,13 @@
       <div class="work-content">
         <h2>Apex</h2>
         <p>This webpage introduces an AI-driven chatbot named "Apex Talking Bot." Users can interact with the bot to get assistance on various topics. The AI might provide information, answer questions, and offer support. The page could highlight the capabilities of the bot, its applications, and how users can leverage it for different tasks. Additionally, it may feature a user-friendly interface for seamless interactions.</p>
-        <a href="https://pratik11500.github.io/Apex/" target="_blank" class="redirect-btn">Explore</a>
+        <a href="#" target="_blank" class="redirect-btn">Explore</a>
       </div>
+      <div class="overlay">Under Development</div>
     </div>
     
   </div>
             </div>
-
       
             <div id="contact">
 
@@ -399,7 +295,7 @@
         setTimeout(() => {
             popup.style.opacity = "1";
         }, 10);
-        setTimeout(closePopup, 5000); // Hide after 5 seconds
+        setTimeout(closePopup, 5000); // Hide after 2 seconds
     }
 
     function closePopup() {
